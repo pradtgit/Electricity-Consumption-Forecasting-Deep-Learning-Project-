@@ -17,4 +17,4 @@ This project focuses on time series forecasting for hourly electricity consumpti
 I would be using the PJM Hourly Energy Consumption dataset from Kaggle which is originally from PJM Interconnection. Specifically, I will be working with the PJMW_hourly.csv file. It is a clean two columned time series dataset with an hourly Datetime index and load in megawatts(MW). The sample spans approximately from 2001 to 2018 with typical demand ranging from 14.5k to 62k MW. 
 
 Dataset Link:
-https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption?select=PJME_hourly.csv
+https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption?select=PJMW_hourly.csv
