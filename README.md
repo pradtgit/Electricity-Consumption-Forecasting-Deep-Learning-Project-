@@ -1,5 +1,9 @@
 # Electricity-Consumption-Forecasting-Deep-Learning-Project-
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0f2ad37e-fc6a-49f5-8004-9c923cbe41e5" width="700">
+</p>
+
 ## Team for the project
 
 | Field | Details |
