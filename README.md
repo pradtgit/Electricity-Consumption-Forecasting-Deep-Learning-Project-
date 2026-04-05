@@ -39,11 +39,11 @@ https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption?select=PJMW
 ## Results
 
 - Naive models provided baseline performance with higher error.
-- Random Forest significantly improved accuracy (R² ≈ 0.98).
+- Random Forest significantly improved accuracy (R² ≈ 98%).
 - Deep learning models outperformed traditional methods:
-  - LSTM: R² ≈ 0.9946
-  - BiLSTM: R² ≈ 0.9950
-  - Stacked LSTM: Best performance with R² ≈ 0.9954 (~99.5%)
+  - LSTM: R² ≈ 99.46%
+  - BiLSTM: R² ≈ 99.50%
+  - Stacked LSTM: Best performance with R² ≈ 99.54% 
 - Achieved low MAE, RMSE and MAPE, indicating strong predictive performance.
 - Final comparison confirms Stacked LSTM as the best model.
 
