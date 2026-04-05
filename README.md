@@ -18,3 +18,36 @@ I would be using the PJM Hourly Energy Consumption dataset from Kaggle which is 
 
 Dataset Link:
 https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption?select=PJMW_hourly.csv
+
+## Methodology
+
+- Performed exploratory data analysis to understand trends, seasonality and distribution (time series plots, histograms).
+- Engineered calendar-based features such as weekend indicator and US holidays to capture behavioral patterns.
+- Created lag features (t-1 to t-5) to model temporal dependencies in electricity usage.
+- Applied time-based splitting into train, validation and test sets to preserve sequence integrity.
+- Standardized features and prepared sequence data (24-hour windows) for deep learning models.
+- Implemented multiple models:
+  - Naive baselines (last value, seasonal 24-hour)
+  - Random Forest (traditional ML baseline)
+  - LSTM, Stacked LSTM and BiLSTM (deep learning models)
+- Used PyTorch for training with early stopping and optimized using Adam optimizer.
+
+## Results
+
+- Naive models provided baseline performance with higher error.
+- Random Forest significantly improved accuracy (R² ≈ 0.98).
+- Deep learning models outperformed traditional methods:
+  - LSTM: R² ≈ 0.9946
+  - BiLSTM: R² ≈ 0.9950
+  - Stacked LSTM: Best performance with R² ≈ 0.9954 (~99.5%)
+- Achieved low MAE, RMSE and MAPE, indicating strong predictive performance.
+- Final comparison confirms Stacked LSTM as the best model.
+
+## Reflection and Analysis
+
+- Time series patterns such as daily cycles and seasonality were effectively captured using lag features and sequence modeling.
+- Deep learning models performed better due to their ability to learn temporal dependencies compared to traditional ML.
+- Residual analysis showed errors are generally low but slightly higher during peak usage hours.
+- Model generalizes well across unseen test data, indicating minimal overfitting.
+- Limitation: performance depends on historical patterns. Sudden anomalies or external factors (weather, outages) are not explicitly modeled.
+- Overall, the pipeline demonstrates a strong, scalable approach for real-world electricity demand forecasting.
