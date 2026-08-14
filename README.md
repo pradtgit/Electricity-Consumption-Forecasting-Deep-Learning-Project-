@@ -9,7 +9,6 @@
 | Field | Details |
 |------|---------|
 | Name | Pradnya Tendolkar |
-| GitHub Username | pradtgit |
 
 ## Brief Summary of the Project
 
