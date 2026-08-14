@@ -9,7 +9,6 @@
 | Field | Details |
 |------|---------|
 | Name | Pradnya Tendolkar |
-| GWID | G45312425 |
 | GitHub Username | pradtgit |
 
 ## Brief Summary of the Project
